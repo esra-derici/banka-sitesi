@@ -1,0 +1,586 @@
+/* Güvenlik ve Gizlilik Sayfası Stilleri */
+
+.guvenlik-gizlilik {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1e293b;
+}
+
+/* Güvenlik Önlemleri */
+.guvenlik-onlemleri {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.guvenlik-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.guvenlik-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.guvenlik-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #1e3a8a;
+}
+
+.guvenlik-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.guvenlik-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.guvenlik-card p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.guvenlik-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.guvenlik-features li {
+  padding: 0.5rem 0;
+  color: #64748b;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.guvenlik-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+/* Veri Koruması */
+.veri-korumasi {
+  padding: 80px 0;
+  background: white;
+}
+
+.veri-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.veri-text h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.veri-text p {
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.veri-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.principle {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.principle:hover {
+  background: #f0f4ff;
+  border-color: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+.principle-icon {
+  font-size: 2rem;
+  min-width: 40px;
+}
+
+.principle-text h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.principle-text p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.veri-rights {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.veri-rights h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  text-align: center;
+}
+
+.rights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.right-item:hover {
+  background: #f0f4ff;
+  border-color: #1e3a8a;
+  transform: translateX(5px);
+}
+
+.right-icon {
+  font-size: 1.2rem;
+  min-width: 24px;
+}
+
+.right-item span {
+  font-size: 0.9rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Güvenlik İpuçları */
+.guvenlik-ipuclari {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.ipucu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.ipucu-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.ipucu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #1e3a8a;
+}
+
+.ipucu-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ipucu-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  text-align: center;
+}
+
+.ipucu-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ipucu-card li {
+  padding: 0.5rem 0;
+  color: #64748b;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.ipucu-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Sertifikalar */
+.sertifikalar {
+  padding: 80px 0;
+  background: white;
+}
+
+.sertifika-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.sertifika-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.sertifika-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #1e3a8a;
+  background: linear-gradient(135deg, #f0f4ff 0%, #dbeafe 100%);
+}
+
+.sertifika-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.sertifika-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.sertifika-card p {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* İletişim */
+.iletisim-guvenlik {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+}
+
+.iletisim-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.iletisim-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.iletisim-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.iletisim-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.method:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(10px);
+}
+
+.method-icon {
+  font-size: 2rem;
+  min-width: 40px;
+}
+
+.method-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.method-info p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.acil-durum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acil-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.acil-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.acil-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.acil-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.acil-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.acil-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.acil-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .veri-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .veri-principles {
+    grid-template-columns: 1fr;
+  }
+  
+  .guvenlik-grid,
+  .ipucu-grid,
+  .sertifika-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .iletisim-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .method {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .method:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .guvenlik-card,
+  .ipucu-card,
+  .sertifika-card {
+    padding: 1.5rem;
+  }
+  
+  .veri-principles {
+    gap: 1rem;
+  }
+  
+  .principle {
+    padding: 1rem;
+  }
+  
+  .acil-card {
+    padding: 2rem;
+  }
+}
+
+/* Animation for cards */
+.guvenlik-card,
+.ipucu-card,
+.sertifika-card,
+.principle {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation for grid items */
+.guvenlik-card:nth-child(1) { animation-delay: 0.1s; }
+.guvenlik-card:nth-child(2) { animation-delay: 0.2s; }
+.guvenlik-card:nth-child(3) { animation-delay: 0.3s; }
+.guvenlik-card:nth-child(4) { animation-delay: 0.4s; }
+
+.ipucu-card:nth-child(1) { animation-delay: 0.1s; }
+.ipucu-card:nth-child(2) { animation-delay: 0.2s; }
+.ipucu-card:nth-child(3) { animation-delay: 0.3s; }
+.ipucu-card:nth-child(4) { animation-delay: 0.4s; }
